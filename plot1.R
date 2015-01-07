@@ -8,6 +8,6 @@ ep$dateTime=paste(ep$Date,ep$Time)
 ep$dateTime=strptime(ep$dateTime,format="%d/%m/%Y %H:%M:%S")
 
 #create the plot and save to png file
-png("plot1.png")
+png("plot1.png") #default of 480 by 480 pixels is required so no need to specify
 hist(ep$Global_active_power,col="red",main="Global Active Power", xlab="Global Active Power (kilowatts)", ylab="Frequency")
 dev.off()
